@@ -1,0 +1,71 @@
+/* main color : #EEDBCA */
+/* sub color : #F0E9DF */
+/* font-family : JejuMyeongjo */
+/* text-color : #2D2D2D */
+/* sub-text-color: #545454 */
+
+
+/*body tag(all setting)*/
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+/*home section*/
+.home-section {
+
+}
+
+
+/*nav tag*/
+nav {
+  display: flex;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  justify-content: space-around;
+  align-items: center;
+
+  background: #EEDBCA;
+  backdrop-filter: blur(10px);
+
+  font-size: 18px;
+
+  z-index: 1;
+  position: absolute;
+
+}
+
+span {
+  font-size: 18px;
+}
+
+
+/*background section*/
+.background-section {
+
+}
+
+
+/*info section*/
+.info-section {
+
+}
+
+
+/*video section*/
+.video-section {
+
+}
+
+
+/*image section*/
+.image-section {
+
+}
+
+
+/*letter-section*/
+.letter-section {
+
+}
