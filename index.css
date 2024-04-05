@@ -10,6 +10,7 @@ body {
 	padding: 0;
 	margin: 0;
 	color: #2D2D2D;
+	overflow-x: hidden;
 }
 
 .text-border {
@@ -53,7 +54,7 @@ nav {
 .section {
 	display: flex;
 	/* min-width: 1600px; */
-	padding: 60px 200px;
+	padding: 60px 0px;
 	flex-direction: column;
 	align-items: center;
 	background: linear-gradient(180deg, #F0E9DF 0%, #F0E9DF 0%, #fffaf5 100%);
@@ -210,7 +211,7 @@ nav {
 /*letter-section*/
 #letter {
 	display: flex;
-	padding: 180px 0px;
+	padding: 180px 80px;
 	flex-direction: column;
 	align-items: center;
 	gap: 80px;
@@ -218,7 +219,6 @@ nav {
 }
 .letter-frame {
 	display: flex;
-	padding: 0px 120px;
 	align-items: flex-start;
 	gap: 40px;
 	align-self: stretch;
@@ -253,6 +253,9 @@ nav {
 
 	border-radius: 12px;
 	background: #F6F2EC;
+}
+.letter-hidden {
+	display: none;
 }
 
 
