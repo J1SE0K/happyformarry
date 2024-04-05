@@ -76,7 +76,7 @@ nav {
 	align-items: center;
 
 	padding: 80px 80px;
-	gap: 20px;
+	gap: 80px;
 
 	background-color: #FFF;
 	border-radius: 20px;
@@ -189,7 +189,7 @@ nav {
 footer {
 	display: flex;
 	flex-flow: column;
-	align-items: center;
+	/* align-items: center; */
 	
 	padding: 20px;
 
