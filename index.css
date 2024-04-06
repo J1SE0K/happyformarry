@@ -4,6 +4,12 @@
 /* text-color : #2D2D2D */
 /* sub-text-color: #545454 */
 
+@font-face {
+    font-family: 'SokchoBadaBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_1@1.0/SokchoBadaBatang.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*body tag(all setting)*/
 body {
@@ -21,9 +27,11 @@ body {
 
 /*home section*/
 #home {
-	height: 100vh;
-	background-image: url(assets/home.png);
-	background-size: contain;
+	
+}
+
+#home>div>img {
+	width: 100%;
 }
 
 
@@ -39,6 +47,7 @@ nav {
 	background: #eedbca89;
 	backdrop-filter: blur(10px);
 
+	font-family: 'SokchoBadaBatang';
 	font-size: 18px;
 }
 
@@ -58,11 +67,13 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	background: linear-gradient(180deg, #F0E9DF 0%, #F0E9DF 0%, #fffaf5 100%);
+	font-family: 'SokchoBadaBatang';
 }
 
 .r-section {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	padding: 160px 0;
 }
@@ -108,6 +119,7 @@ nav {
 
 	border-radius: 12px;
 	background: #FFF;
+	font-family: Noto Sans;
 }
 .video-bar {
 	display: flex;
@@ -131,7 +143,7 @@ nav {
 }
 .video-title {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 12px;
 	align-self: stretch;
 }
@@ -179,12 +191,14 @@ nav {
 /*image section*/
 #image {
 	gap: 80px;
+	max-width: 100%;
 }
 .img-grup {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	gap: 40px;
+	max-width: 100%;
 }
 .img-frame {
 	display: flex;
@@ -212,10 +226,11 @@ nav {
 #letter {
 	display: flex;
 	padding: 180px 80px;
+	max-width: 1800px;
 	flex-direction: column;
 	align-items: center;
 	gap: 80px;
-	align-self: stretch;
+	align-self: center;
 }
 .letter-frame {
 	display: flex;
@@ -227,12 +242,14 @@ nav {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	max-width: 320px;
+	min-width: 132px;
 	gap: 30px;
 	flex: 1 0 0;
 }
 .letter-list {
 	display: flex;
-	padding: 40px;
+	padding: 12px 32px;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 20px;
@@ -244,9 +261,9 @@ nav {
 .letter-box {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 68%;
+	/* justify-content: center;
+	align-items: center; */
+	min-width: 480px;
 	gap: 40px;
 	align-self: stretch;
 	padding: 40px;
@@ -257,16 +274,29 @@ nav {
 .letter-hidden {
 	display: none;
 }
+.letter-active {
+	background: #efe8dc;
+}
 
 
 /* footer */
 footer {
 	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: #EEDBCA;
+	font-family: 'SokchoBadaBatang';
+
+	font-size: 12px;
+}
+.footer-box {
+	display: flex;
 	flex-flow: column;
 	/* align-items: center; */
 	
-	padding: 20px;
+	padding: 12px 32px;
 
-	background-color: #EEDBCA;
-
+}
+.licenc {
+	max-width: 320px;
 }
