@@ -212,7 +212,8 @@ nav {
 	background: #FFF;
 }
 .img-frame>img {
-	width: 100%;
+	width: 252px;
+	height: 252px;
 }
 .img-frame-text {
 	display: flex;
